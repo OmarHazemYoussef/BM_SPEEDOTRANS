@@ -1,0 +1,8 @@
+<div class="app bg-background text-text font-sans m-0 p-0">
+  <app-header (registerClicked)="toggleRegisterPopup()"></app-header>
+  <router-outlet></router-outlet> 
+  <app-getting-started></app-getting-started>
+  <app-mobile-app></app-mobile-app>
+  <app-footer></app-footer>
+  <app-register-popup *ngIf="showRegisterPopup" (closePopup)="onCloseRegisterPopup()"></app-register-popup>
+</div>

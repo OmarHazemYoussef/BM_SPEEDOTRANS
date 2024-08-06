@@ -1,0 +1,106 @@
+.popup {
+    position: absolute;
+    width: 675px;
+    height: 506px;
+    top: 2369px;
+    left: 3514px;
+    padding: 0px 40px;
+    gap: 39px;
+    opacity: 0; /* Initially hidden */
+    background-color: rgba(128, 128, 128, 0.5); /* Example background color for visibility */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Example shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 50;
+  }
+  
+  .popup .header {
+    width: 595px;
+    height: 32px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 8px;
+  }
+  
+  .popup .header .close-btn {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup .content {
+    width: 567px;
+    height: 317px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 39px;
+  }
+  
+  .popup .content .title {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  
+  .popup .content .title .icon {
+    height: 24px;
+  }
+  
+  .popup .content .title .text {
+    font-size: 20px;
+    line-height: 30px;
+    color: #871e35; /* Example color for title text */
+  }
+  
+  .popup .content .items {
+    flex-direction: column;
+    width: 567px;
+    height: 248px;
+    gap: 16px;
+  }
+  
+  .popup .content .items .item {
+    background-color: rgba(128, 128, 128, 0.2); /* Example background color */
+    display: flex;
+    flex-direction: row;
+    width: 567px;
+    height: 116px;
+    border-radius: 8px;
+    padding: 16px;
+    gap: 32px;
+  }
+  
+  .popup .content .items .item .icon-container {
+    width: 84px;
+    height: 84px;
+    background-color: rgba(128, 128, 128, 0.4); /* Example background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup .content .items .item .info {
+    width: 205px;
+    height: 70px;
+    gap: 16px;
+  }
+  
+  .popup .content .items .item .info .name {
+    font-size: 20px;
+    color: #3c3a37; /* Example color for name text */
+    font-weight: 600;
+  }
+  
+  .popup .content .items .item .info .contact {
+    font-size: 16px;
+    color: #a8a8a8; /* Example color for contact text */
+  }
+  

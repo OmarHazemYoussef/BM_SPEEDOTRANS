@@ -1,0 +1,44 @@
+<div class="home bg-cover bg-center bg-no-repeat" style="background-image: url('../../../assets/1.jpg'); padding: 100px 20px;">
+  <div class="content flex justify-between items-center max-w-6xl mx-auto text-white">
+    <div class="text-section">
+      <h2 class="text-2xl mb-2">Simple. Quick. Secure.</h2>
+      <h1 class="text-5xl mb-5">Send Money Anywhere, Instantly</h1>
+      <p class="text-lg mb-10">Fast, secure, and affordable international money transfers. Get started in minutes.</p>
+      <button class="cta-btn" (click)="toggleRegisterPopup()">
+        <span>Create An Account</span>
+      </button>
+    </div>
+    <div class="form-section">
+      <form class="form flex flex-col gap-5">
+        <div class="input-box">
+          <label for="amount">You send</label>
+          <div class="input-group">
+            <input type="text" id="amount" placeholder="Enter the amount" />
+            <select>
+              <option>USD</option>
+              <option>EUR</option>
+              <option>KSR</option>
+              <option>EGP</option>
+            </select>
+          </div>
+        </div>
+        <div class="recipient-box">
+          <label for="recipient-amount">Recipient gets</label>
+          <div class="input-group">
+            <input type="text" id="recipient-amount" placeholder="Enter the amount" />
+            <select>
+              <option>USD</option>
+              <option>EUR</option>
+              <option>KSR</option>
+              <option>EGP</option>
+            </select>
+          </div>
+        </div>
+        <p class="delivery-time">Delivery Time: <span>By May 20th</span></p>
+        <button class="submit-btn"><span>Continue</span></button>
+        <p class="terms">By Clicking Continue, I'm agree with <a href="#" class="text-blue-500 hover:underline">Terms & Policy</a></p>
+      </form>
+    </div>
+  </div>
+  <app-register-popup *ngIf="showRegisterPopup" (closePopup)="onClosePopup()"></app-register-popup>
+</div>

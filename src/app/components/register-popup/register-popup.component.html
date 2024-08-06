@@ -1,0 +1,87 @@
+<div class="fixed">
+  <!-- Logo Section -->
+  <div class="flex justify-start p-4">
+    <div class="speedo-logo">
+      <span class="logo-text">Speedo Transfer</span>
+    </div>
+  </div>
+
+  <!-- Close Button Section -->
+  <div class="close-button">
+    <img src="assets/closepopup.png" alt="Close" class="close-button-icon cursor-pointer" (click)="onClosePopup()" />
+  </div>
+
+  <!-- Main Content Section -->
+  <div class="main-content">
+    <div class="registration-card shadow-lg rounded-lg">
+      <div class="flex flex-col">
+        <!-- Create Account Section -->
+        <div class="create-account-section">
+          <h2 class="text-2xl font-bold">Create Your Account</h2>
+          <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
+        </div>
+        <form (ngSubmit)="onSubmit()" class="flex flex-col">
+          <input type="text" id="username" placeholder="User name" class="mb-4 p-2 text-lg border border-gray-300 rounded-md" />
+          <input type="email" id="email" placeholder="Email address" class="mb-4 p-2 text-lg border border-gray-300 rounded-md" />
+          <select id="country" class="mb-4 p-2 text-lg border border-gray-300 rounded-md">
+            <option value="UK">UK</option>
+            <option value="EUR">EUR</option>
+            <option value="KSR">KSR</option>
+            <option value="EGP">EGP</option>
+          </select>
+          <div class="flex mb-4">
+            <input type="text" id="day" placeholder="DD" maxlength="2" pattern="\d{1,2}" class="p-2 text-lg border border-gray-300 rounded-md mr-2" />
+            <select id="month" class="p-2 text-lg border border-gray-300 rounded-md mr-2">
+              <option value="" disabled selected>Month</option>
+              <option value="01">January</option>
+              <option value="02">February</option>
+              <option value="03">March</option>
+              <option value="04">April</option>
+              <option value="05">May</option>
+              <option value="06">June</option>
+              <option value="07">July</option>
+              <option value="08">August</option>
+              <option value="09">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+            <select id="year" class="p-2 text-lg border border-gray-300 rounded-md">
+              <option value="" disabled selected>YYYY</option>
+            </select>
+          </div>
+          <div class="relative mb-4">
+            <input type="password" id="password" placeholder="Password" class="p-2 text-lg border border-gray-300 rounded-md password-input" />
+            <img
+              src="assets/passpic.png" 
+              alt="Toggle Password Visibility"
+              class="eye-icon"
+              (click)="togglePasswordVisibility('password')"
+            />
+          </div>
+          <span *ngIf="passwordError" class="text-red-500 text-sm mb-4">{{ passwordError }}</span>
+          <div class="relative mb-4">
+            <input type="password" id="confirm-password" placeholder="Confirm password" class="p-2 text-lg border border-gray-300 rounded-md password-input" />
+            <img
+              src="assets/passpic.png" 
+              alt="Toggle Password Visibility"
+              class="eye-icon"
+              (click)="togglePasswordVisibility('confirm-password')"
+            />
+          </div>
+          <span *ngIf="confirmPasswordError" class="text-red-500 text-sm mb-4">{{ confirmPasswordError }}</span>
+          <p class="text-sm mb-4">The password should be at least eight characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! " ? $ % ^ & ).</p>
+          <button type="submit" class="create-account-button py-2 px-4 rounded-md">Create Account</button>
+        </form>
+        <div class="text-center mt-5 login-text">
+          <span>Already have an account? </span><a href="#" class="underline">Login</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer">
+    ©Speedo Transfer Payments Limited 2024
+  </div>
+</div>
