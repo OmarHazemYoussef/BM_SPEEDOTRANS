@@ -9,7 +9,6 @@
 header {
     background-color: white;
     width: 100%; /* Full width */
-    max-width: 1440px; /* Maximum width */
     height: 71.23px; /* Fixed height */
     padding: 8px 0; /* py-2 */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
@@ -148,7 +147,6 @@ header .register-btn:hover {
 /* Footer background and general layout */
 .footer-bg {
     background-color: #521220; /* Adjust this to match the exact background color */
-    width: 1440px; /* Fixed width */
     padding-top: 50px;
     padding-right: 96px;
     padding-bottom: 0px;
@@ -272,7 +270,6 @@ header .register-btn:hover {
 
   .mobile-app {
     width: 100%;
-    max-width: 1440px; 
     height: auto;
     padding-top: 64px;
     padding-right: 96px;
@@ -442,7 +439,6 @@ header .register-btn:hover {
 /* Layout for the section */
 .getting-started-section {
     width: 100%; /* Make the section full width */
-    max-width: 1440px; /* Limit the max width */
     padding: 64px 60px;
     opacity: 1;
     text-align: center; /* Center the text */
@@ -551,7 +547,6 @@ header .register-btn:hover {
 
 /* Home component container */
 .home {
-    width: 1440px;    
     height: 800px; 
     background-image: url('/assets/1.jpg');
     background-size: cover;
@@ -824,7 +819,6 @@ header .register-btn:hover {
 /* Fixed Container */
 .fixed {
     width: 100%;
-    max-width: 1440px;
     height: 100vh;
     position: fixed;
     top: 0;
